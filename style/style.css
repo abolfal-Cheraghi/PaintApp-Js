@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: cursive ;
+}
+
+
+::selection{
+    background: rgba(137, 43, 226, 0.612);
+    color: white;
+}
+
+.con{
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #fcfcfc;
+}
+
+.tools-area{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding: 0 15px;
+}
+
+.tools{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tools .color{
+    display: flex;
+    align-items: center;
+}
+
+input[type = "color"]{
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input[type = "color"]::-webkit-color-swatch{
+    padding: 0;
+}
+input[type = "color"]::-webkit-color-swatch{
+    border: 2px solid  lightgray;
+}
+
+label , i {
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.buttons button{
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .save{
+    background-color: #4a98f7;
+    color: #fff;
+}
+
+.buttons .clear{
+    background-color: rgb(237, 237, 237) !important;
+}
+
+.buttons .clear:hover{
+    background-color: lightgray !important;
+}
+
+
+.draw-area canvas{
+    width: 100%;
+    height: 450px;
+    border-radius: 0 0 10px 10px;
+}
+
+.active{
+    color: #4a98f7;
+}
+
+
+
